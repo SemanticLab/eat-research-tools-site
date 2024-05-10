@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+.card{
+  position: absolute;
+}
+
+
+
+body{
+  height: 100vh;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  margin:0;
+  padding:0;
+}
+
+
+#loading{
+
+  
+  margin-top: 5em;
+  position: absolute;
+  width: 99%;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+
+  
+}
+
+#loading-dots{
+  position: relative;
+  display: inline-block;
+  
+
+}
+
+nav{
+  position: fixed;
+  top:5px;
+  background-color: red;
+  left: 5px;
+  width: 10.5em;
+  height: 1em;
+  padding: 1em;
+  z-index: 9999999999;
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+  background-color: #34343498;
+
+
+}
+nav button{
+  position: absolute;
+  min-height: 2.5em;
+  height: 2em;
+  border: none;
+  background-color: transparent;
+  /* border: solid 1px white; */
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:white;
+
+
+
+}
+nav #menu{
+  left: 0em;
+  top: 0.5em;
+  cursor: pointer;
+}
+nav #mode-grid{
+  left: 4em;
+  top: 0.75em;
+  cursor: pointer;
+}
+nav #mode-freestyle{
+  left: 7em;
+  top: 0.3em;
+  cursor: pointer;
+
+}
+
+nav #mode-entity{
+  left: 10.5em;
+  top: 0.1em;
+  cursor: pointer;
+
+}
+
+
+
+#info-box{
+  display: none;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5em;
+  position: absolute;
+
+  color:white;
+  background-color: #34343498;
+  margin:1vw;
+  width: 93vw;
+  padding: 2vw;
+  padding-top: 0;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+  z-index: 9999999999999;
+  
+
+}
+
+#info-box button{
+  position: absolute;
+  background-color: #34343498;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5em;
+  color:white;
+  border: solid 1px white;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+
+  top: -200px;
+  cursor: pointer;
+
+}
+
+
+
+
+.assoicted-links a{
+  color:white;
+  font-size: 0.6em;
+  padding-right: 10px;
+  
+  
+}
+.info-links {
+  font-size: 0.75em;
+
+}
+.info-links a{
+  color: white;
+}
+#info-box-left{
+  flex:1;
+}
+#info-box-right{
+  flex:1;
+}
+#info-box-left-content, #info-box-right-content{
+  font-size: 1em;
+}
+.block-text{
+  margin-top: 1em;
+  font-size: 0.75em;
+  white-space: pre-wrap;
+}
+
+
+
+#entity-box{
+  width:95vw;
+  height: 100px;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+  z-index: 9999999999999;
+  color:white;
+  background-color: #34343498;
+  top: 75px;
+  left:1.5vw;
+  height: 90vh;
+  padding: 1em;
+  padding-top: 0;
+  position: fixed;
+  border-radius: 0.5em;
+  background-color: #34343498;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-y: scroll;
+  opacity: 0;
+  display: none;
+}
+
+
+#entity-box h1{
+  margin-top: 0.25em;
+}
+
+#entity-box ul{
+  column-count: 4;
+}
+
+#entity-box a{
+  text-decoration: none;
+  color: white !important;
+}
+#entity-box a:hover{
+  text-decoration: underline
+
+}
+
+#entity-box-close{
+  position: absolute;
+  background-color: #34343498;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5em;
+  color:white;
+  border: solid 1px white;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+  top:75px;
+  left:5px;
+  cursor: pointer;
+  z-index: 99999999999;
+  opacity: 0;
+  display: none;
+
+}
+
+
+#welcome{
+  width:45vw;
+  height: 100px;
+  box-shadow: -1px 17px 12px -16px rgba(0,0,0,0.75);
+  z-index: 9999999999999;
+  color:white;
+  background-color: #34343498;
+  top: 75px;
+  right:3vw;
+  height: 90vh;
+  padding: 1em;
+  padding-top: 0;
+  position: fixed;
+  border-radius: 0.5em;
+  background-color: #34343498;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-y:auto;
+  opacity: 0;
+  display: none;
+}
+
+#welcome h1{
+  text-align: center;
+}
+
+#welcome-instructions{
+  display: flex;
+}
+#welcome-instructions div{
+  flex:1;
+}
+
+.welcome-instructions-graphic{
+  position: relative;
+  min-height: 200px;;
+  /* background-color: red; */
+}
+
+.welcome-instructions-graphic-card{
+  position: absolute;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+
+#instruct-mock-card, #instruct-mock-card-rotate, #instruct-mock-card-right{
+  text-align: center;
+}
+#instruct-mock-card-rotate, #instruct-mock-card-right{
+  margin: 50px;
+}
+
+
+#instruct-mock-card svg, #instruct-mock-card-rotate svg, #instruct-mock-card-right svg{
+  margin-top: 10px;
+}
+.welcome-instructions-graphic-text{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
