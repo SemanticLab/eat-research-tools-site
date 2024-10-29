@@ -75,7 +75,7 @@
                     `,H='<div class="assoicted-links">';for(let L of Y)H=H+`<a href="http://base.semlab.io/entity/${L.qid}" target="_blank">${L.label}</a>`;H=H+"</div>";let B=`<div class="info-links">Card Link: <a target="_blank" href="${lt[_.dataset.qid].uri}">${_.dataset.qid}</a>`;A&&(B=B+` | Block Link: <a target="_blank" href="${A}">${A.split("/")[4]}</a>`),B=B+"</div>",document.querySelector(R).innerHTML=B+Q+H}document.querySelector("#info-box").style.opacity=0,document.querySelector("#info-box").style.display="flex",$.to("#info-box",{opacity:1,duration:2})}}}})}})};o.complete?h():o.addEventListener("load",()=>{h()}),e=`
     select ?card ?block ?blockTextURL where {
   
-      ?card wdt:P1 wd:Q19069.
+      ?card wdt:P1 wd:Q28613.
       ?card wdt:P96 wd:Q24347.
       ?block wdt:P24 ?card.
       ?block wdt:P20 ?blockTextURL.
