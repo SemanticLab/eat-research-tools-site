@@ -58,7 +58,7 @@
 
       select ?card ?block ?localId (group_concat(?assoicted;separator="<SEP>") as ?assoicteds) (group_concat(?assoictedLabel;separator="<SEP>") as ?assoictedLabels) where {
       
-        ?card wdt:P1 wd:Q19069.
+        ?card wdt:P1 wd:Q28613.
         ?card wdt:P96 wd:Q24347.
         ?block wdt:P24 ?card.
         ?block wdt:P21 ?assoicted.
